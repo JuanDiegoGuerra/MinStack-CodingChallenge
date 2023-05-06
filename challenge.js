@@ -5,7 +5,16 @@ class Stack {
 
   push(number) {
 		// write your code here.
-
+		if (this.stack.length > 0) {
+			const n = this.stack.length;
+			this.stack.push([
+				number,
+				Math.min(number, this.stack[n - 1][1]),
+				Math.max(number, this.stack[n - 1][2]),
+			]);
+		} else {
+			this.stack.push([number, number, number]);
+		}
 	}
 
 	pop() {
