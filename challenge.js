@@ -19,6 +19,8 @@ class Stack {
 
 	pop() {
 		// write your code here.
+		const [v, curMin, curMax] = this.stack.pop();
+		return v;
 	}
   
 	min() {
