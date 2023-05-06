@@ -25,6 +25,8 @@ class Stack {
   
 	min() {
 		// write your code here.
+		const n = this.stack.length;
+		return this.stack[n - 1][1];
 	}
 }
 
